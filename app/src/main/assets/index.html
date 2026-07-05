@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pediatric Dental World - Gentle Care, Happy Smiles | Best Pediatric Dentist</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Welcome to Pediatric Dental World, the leading child-friendly dental clinic. Providing gentle preventive care, painless cavity treatments, pediatric braces, and special needs dentistry for toddlers, infants, and teens. Book your friendly dental visit today!">
+  <meta name="keywords" content="pediatric dentist, child dentist, pediatric dental world, children dentistry, baby dentist, dental clinic for kids, painless kids dentistry, dental sealants, special needs dental care">
+  <link rel="canonical" href="https://yourdomain.com/index.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/index.html">
+  <meta property="og:title" content="Pediatric Dental World - Gentle Pediatric Dental Clinic">
+  <meta property="og:description" content="Creating happy smiles in a fun, child-friendly environment. Gentle treatments, expert pediatric dentists, and high safety standards for infants and teens.">
+  <meta property="og:image" content="https://yourdomain.com/assets/images/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourdomain.com/index.html">
+  <meta property="twitter:title" content="Pediatric Dental World - Gentle Care, Happy Smiles">
+  <meta property="twitter:description" content="Painless pediatric dental care, preventive sealants, cavity therapies, and custom orthodontic programs for children.">
+  <meta property="twitter:image" content="https://yourdomain.com/assets/images/og-image.jpg">
+
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Quicksand:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Free Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Supabase CDN Client Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <!-- Supabase Config & Main script -->
+  <script src="supabase-config.js" defer></script>
+  <script src="script.js" defer></script>
+
+  <!-- Schema.org Local SEO & Dentist Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Pediatric Dental World",
+    "image": "https://yourdomain.com/assets/images/logo.png",
+    "@id": "https://yourdomain.com/#dentist",
+    "url": "https://yourdomain.com",
+    "telephone": "+15550199",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Sunny Dental Lane, Suite 100",
+      "addressLocality": "Smile City",
+      "addressRegion": "CA",
+      "postalCode": "90210",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0736,
+      "longitude": -118.4004
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "14:00"
+      }
+    ],
+    "sameAs": [
+      "https://facebook.com/pediatricdentalworld",
+      "https://instagram.com/pediatricdentalworld"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="Pediatric Dental World Home">
+        <div class="logo-icon" aria-hidden="true">🧸</div>
+        <div class="logo-text">Pediatric<span> Dental World</span></div>
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Our Doctors</a>
+        <a href="blog.html">Dental Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="appointment.html" class="btn btn-primary nav-cta">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>Gentle Care,<br><span>Happy Smiles!</span></h1>
+          <p>We build beautiful smiles that last a lifetime. Our specialized team of pediatric dentists creates a safe, fun, and completely stress-free experience designed specifically for kids, infants, and teenagers.</p>
+          <div class="hero-ctas">
+            <a href="appointment.html" class="btn btn-primary"><i class="fas fa-calendar-check" style="margin-right:0.5rem;"></i> Book an Appointment</a>
+            <a href="services.html" class="btn btn-outline"><i class="fas fa-tooth" style="margin-right:0.5rem;"></i> Our Services</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-placeholder">
+              <i class="fas fa-baby"></i>
+              <h3 style="font-family: var(--font-header);">Smile-Safe Clinic</h3>
+              <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Designed to look like a magical toy world to make kids feel completely comfortable and at home.</p>
+            </div>
+            <!-- Badges overlay -->
+            <div class="hero-badge hero-badge-1">
+              <i class="fas fa-heart"></i>
+              <div class="hero-badge-text">
+                100% Painless Care
+                <span>Specialized pediatric techniques</span>
+              </div>
+            </div>
+            <div class="hero-badge hero-badge-2">
+              <i class="fas fa-award"></i>
+              <div class="hero-badge-text">
+                Top Rated Clinic
+                <span>10,000+ happy kids served</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Why Choose Us</span>
+        <h2>Creating Stress-Free Dental Visits For Kids</h2>
+        <p>Discover why parents trust Pediatric Dental World to be their child's happy dental home.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-child"></i>
+          </div>
+          <h3>Child-Friendly Atmosphere</h3>
+          <p>Our clinic looks like a playground! With toys, video games, ceiling TVs in treatment rooms, and cute dental mascots, children forget they are visiting a clinic.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-feather"></i>
+          </div>
+          <h3>Gentle, Painless Treatments</h3>
+          <p>We use state-of-the-art dental technology, local numbing gels, and safe sedation options (laughing gas) to make sure every procedure is totally painless and comfortable.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h3>Experienced Pediatric Experts</h3>
+          <p>Our specialists have completed years of extra child-psychology and dental training, giving them the perfect skills to handle dental anxiety and special needs.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-shield-virus"></i>
+          </div>
+          <h3>Sterilization & Safety</h3>
+          <p>Your child's health is our absolute priority. We adhere to hospital-grade sterilization protocols and strict infection control standards for complete peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview Section -->
+  <section class="services-section section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Our Services</span>
+        <h2>Specialized Kids Dental Services</h2>
+        <p>From the first baby tooth to adolescent braces, we provide comprehensive pediatric dental treatments in one trusted home.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <i class="fas fa-shield-halved"></i>
+            <span class="service-badge">Preventive</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Checkups & Preventive Cleanings</h3>
+            <p>Gentle cleanings, detailed examinations, and professional plaque removal. We keep tooth decay at bay while educating your child on correct brushing skills.</p>
+            <a href="services.html" class="service-link" aria-label="Learn more about Preventive Cleanings">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <i class="fas fa-heart-pulse"></i>
+            <span class="service-badge">Restorative</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Painless Cavity Treatments</h3>
+            <p>High-quality, tooth-colored filings and kids' root canals (pulpotomy). We treat decay gently, leaving the tooth sturdy and completely healthy.</p>
+            <a href="services.html" class="service-link" aria-label="Learn more about Cavity Treatments">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <i class="fas fa-align-center"></i>
+            <span class="service-badge">Orthodontics</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Kids Braces & Orthodontics</h3>
+            <p>Early jaw growth monitoring, custom space maintainers, and child-friendly braces to guide crooked adult teeth into a perfectly straight smile.</p>
+            <a href="services.html" class="service-link" aria-label="Learn more about Kids Braces">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <i class="fas fa-spray-can-sparkles"></i>
+            <span class="service-badge">Protection</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Fluoride Therapy & Dental Sealants</h3>
+            <p>A thin, invisible protective coating applied over chew surfaces to seal out food, acids, and decay, cutting cavity risks by over 80%!</p>
+            <a href="services.html" class="service-link" aria-label="Learn more about Fluoride and Sealants">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <i class="fas fa-kit-medical"></i>
+            <span class="service-badge">Emergency</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Emergency Pediatric Care</h3>
+            <p>Chipped teeth, severe sudden toothaches, or knocked-out permanent teeth? Our team responds immediately to resolve emergencies and stop dental pain.</p>
+            <a href="services.html" class="service-link" aria-label="Learn more about Emergency Care">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <i class="fas fa-wheelchair"></i>
+            <span class="service-badge">Specialized</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Special Needs Dentistry</h3>
+            <p>We provide compassionate, custom dentistry designed for children with sensory issues, physical challenges, developmental profiles, or severe dental fears.</p>
+            <a href="services.html" class="service-link" aria-label="Learn more about Special Needs Dentistry">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-more-cta">
+        <a href="services.html" class="btn btn-secondary">Explore All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Your Child's First Visit Works Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Your First Visit</span>
+        <h2>What to Expect on Your First Visit</h2>
+        <p>We work hard to make your child's first step into our clinic an incredibly positive, happy adventure.</p>
+      </div>
+
+      <div class="visit-steps">
+        <div class="visit-step">
+          <div class="step-num">1</div>
+          <h3>Warm Welcome & Play</h3>
+          <p>Arrive and let your child explore our child-friendly play zone with toy sets, video games, and drawing stations while we gather paperwork.</p>
+        </div>
+
+        <div class="visit-step">
+          <div class="step-num">2</div>
+          <h3>Meet & Dental Tour</h3>
+          <p>We introduce your child to our happy tooth mascot and show them our "magical" flying dentist chairs, explaining tools using playful words.</p>
+        </div>
+
+        <div class="visit-step">
+          <div class="step-num">3</div>
+          <h3>Gentle Examination</h3>
+          <p>Dr. Sunny counts teeth and checks dental health. No scary scraping or sudden drilling is done, keeping everything simple and comfortable.</p>
+        </div>
+
+        <div class="visit-step">
+          <div class="step-num">4</div>
+          <h3>Prizes & Goodie Bag</h3>
+          <p>Every brave patient gets to choose a premium toy from our clinic's treasure chest and leaves with a shiny Pediatric Dental World kit!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet the Doctors Overview -->
+  <section class="section-padding" style="background-color: var(--bg-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Our Experts</span>
+        <h2>Meet Our Pediatric Doctors</h2>
+        <p>Our specialists are passionate, fun, and highly qualified pediatric dentists dedicated to making kids smile.</p>
+      </div>
+
+      <div class="doctors-grid">
+        <!-- Doc 1 -->
+        <div class="doctor-card">
+          <div class="doctor-image-container">
+            <div class="doctor-image-placeholder">
+              <i class="fas fa-user-doctor"></i>
+            </div>
+            <div class="doctor-socials">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Sunny Smile, DDS</h3>
+            <div class="doctor-title">Chief Pediatric Dentist</div>
+            <p class="doctor-exp">12+ Years Experience • Board Certified Pediatric Specialist</p>
+          </div>
+        </div>
+
+        <!-- Doc 2 -->
+        <div class="doctor-card">
+          <div class="doctor-image-container">
+            <div class="doctor-image-placeholder">
+              <i class="fas fa-user-doctor"></i>
+            </div>
+            <div class="doctor-socials">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Joy Giggles, DDS</h3>
+            <div class="doctor-title">Orthodontist & Kids Dentist</div>
+            <p class="doctor-exp">9+ Years Experience • Specializes in Early Interceptive Braces</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-more-cta">
+        <a href="doctors.html" class="btn btn-outline">View Full Doctor Profiles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smile Transformations / Before vs After Gallery -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Smile Gallery</span>
+        <h2>Real Smile Transformations</h2>
+        <p>See some of our beautifully aligned and restored happy patient smiles.</p>
+      </div>
+
+      <div class="ba-container">
+        <!-- Smile 1 -->
+        <div class="ba-card">
+          <div class="ba-images">
+            <div class="ba-side before">
+              <i class="fas fa-face-frown"></i>
+              <span>Before</span>
+            </div>
+            <div class="ba-side after">
+              <i class="fas fa-face-smile" style="color: var(--secondary);"></i>
+              <span>After</span>
+            </div>
+          </div>
+          <div class="ba-desc">
+            <h4>Pediatric Braces Alignment</h4>
+            <p>14-month custom interceptive brace treatment for a 10-year-old child showing complete correction of crooked teeth.</p>
+          </div>
+        </div>
+
+        <!-- Smile 2 -->
+        <div class="ba-card">
+          <div class="ba-images">
+            <div class="ba-side before">
+              <i class="fas fa-face-frown"></i>
+              <span>Before</span>
+            </div>
+            <div class="ba-side after">
+              <i class="fas fa-face-smile" style="color: var(--secondary);"></i>
+              <span>After</span>
+            </div>
+          </div>
+          <div class="ba-desc">
+            <h4>Tooth-Colored Restoration</h4>
+            <p>Repaired fractured front baby tooth on a 5-year-old using child-friendly composite resin bonding completed in single visit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clinic Gallery -->
+  <section class="section-padding" style="background-color: var(--bg-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Inside Our Clinic</span>
+        <h2>Our Magical Dental World</h2>
+        <p>A peek inside our kid-friendly waiting area, sensory therapy rooms, and sterilized clinical spaces.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="gallery-overlay"><i class="fas fa-eye"></i></div>
+          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #FF8C69, #4FB6E8);">
+            <span style="color: white; font-family: var(--font-header); font-weight: bold; font-size: 1.2rem;">🌟 Playground Waiting Room</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-overlay"><i class="fas fa-eye"></i></div>
+          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #7ED9A8, #4FB6E8);">
+            <span style="color: white; font-family: var(--font-header); font-weight: bold; font-size: 1.2rem;">🎮 Arcade Stations</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-overlay"><i class="fas fa-eye"></i></div>
+          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #4FB6E8, #FF8C69);">
+            <span style="color: white; font-family: var(--font-header); font-weight: bold; font-size: 1.2rem;">📺 Ceiling TVs Over Chairs</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-overlay"><i class="fas fa-eye"></i></div>
+          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #7ED9A8, #FF8C69);">
+            <span style="color: white; font-family: var(--font-header); font-weight: bold; font-size: 1.2rem;">🔬 Sterilization Room</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Parent Testimonials</span>
+        <h2>What Happy Parents Are Saying</h2>
+        <p>Read review stories from parents who experienced our gentle, happy pediatric dental care.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"My 4-year-old toddler was absolutely terrified of dentists. Dr. Sunny spent 15 minutes playing games and showing him the 'magic tooth counter' before checking. My son now asks when we can go back!"</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">SL</div>
+            <div class="user-details">
+              <h4>Sarah Lopez</h4>
+              <span>Mother of Leo (Age 4)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Amazing experience! The clinic feels like a Disneyland theme ride. My daughter watched her favorite cartoon show on the ceiling TV during her cavity filling. Zero tears, zero complaints. Exceptional pediatric team!"</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">MR</div>
+            <div class="user-details">
+              <h4>Marcus Rogers</h4>
+              <span>Father of Maya (Age 7)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Outstanding care for children with special needs. They made our autistic daughter feel safe and comfortable by pacing the visit and managing sensory light levels. Words cannot express how grateful we are."</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">EK</div>
+            <div class="user-details">
+              <h4>Elena Kovac</h4>
+              <span>Mother of Anna (Age 11)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section with Schema Accordion -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">FAQs</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Clear, direct answers to common pediatric dental questions parents ask us.</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>When should my child first visit a pediatric dentist?</h3>
+            <i class="fas fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              The American Academy of Pediatric Dentistry recommends scheduling your child's first visit by their first birthday, or within 6 months of their very first baby tooth coming through. Early visits help us monitor development and catch dental issues before they grow.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>Is dental sedation or laughing gas safe for toddlers?</h3>
+            <i class="fas fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              Yes, absolutely. Nitrous oxide (laughing gas) is highly researched, extremely safe, and mild. It is gently inhaled through a pediatric mask, helping children stay relaxed during treatments. It wears off completely within 5 minutes of breathing clean oxygen.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>What makes a pediatric dentist different from a family dentist?</h3>
+            <i class="fas fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              Pediatric dentists complete 2 to 3 years of extra, specialized hospital-grade training after finishing dental school. This focuses specifically on child psychology, toddler behavior management, children's physical development, and dental care for children with special medical needs.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>Do you accept dental insurance, and what are the payment options?</h3>
+            <i class="fas fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              We accept most major dental PPO insurance plans. We file all paperwork directly on your behalf to maximize your benefits. For out-of-pocket costs, we accept cash, credit cards, and offer interest-free monthly payment plans.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Appointment Section (Supabase Connected) -->
+  <section id="book-section" class="booking-section section-padding">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-info">
+          <span class="tag">Appointments</span>
+          <h2>Ready to Schedule Your Child's Happy Dental Visit?</h2>
+          <p>Fill out our simple 1-minute request form. Our dedicated team will call you within a few business hours to finalize and lock in your child's appointment slot.</p>
+          
+          <div class="contact-card-list">
+            <div class="contact-card-item">
+              <div class="contact-card-icon"><i class="fas fa-phone-volume"></i></div>
+              <div class="contact-card-details">
+                <h4>Call Our Reception Desk</h4>
+                <p>+1 (555) 0199 (Mon-Sat, 9AM - 6PM)</p>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon"><i class="fab fa-whatsapp" style="color:#25D366;"></i></div>
+              <div class="contact-card-details">
+                <h4>WhatsApp Clinic Helpline</h4>
+                <p>+1 (555) 0199 (Fast Response)</p>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon"><i class="fas fa-location-dot"></i></div>
+              <div class="contact-card-details">
+                <h4>Clinic Location</h4>
+                <p>123 Sunny Dental Lane, Suite 100, Smile City, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-wrapper">
+          <h3 class="form-title">Request Appointment</h3>
+          
+          <form id="booking-form" class="booking-form">
+            <!-- Form fields -->
+            <div class="form-group">
+              <label for="parent-name">Parent / Guardian Name *</label>
+              <input type="text" id="parent-name" class="form-control" placeholder="e.g. Sarah Lopez" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="child-name">Child's Name *</label>
+                <input type="text" id="child-name" class="form-control" placeholder="e.g. Leo" required>
+              </div>
+              <div class="form-group">
+                <label for="child-age">Child's Age *</label>
+                <input type="number" id="child-age" class="form-control" min="0" max="18" placeholder="e.g. 4" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="parent-phone">Phone Number *</label>
+                <input type="tel" id="parent-phone" class="form-control" placeholder="e.g. (555) 123-4567" required>
+              </div>
+              <div class="form-group">
+                <label for="parent-email">Email Address *</label>
+                <input type="email" id="parent-email" class="form-control" placeholder="e.g. sarah@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferred-date">Preferred Date *</label>
+                <input type="date" id="preferred-date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="preferred-time">Preferred Time Slot *</label>
+                <select id="preferred-time" class="form-control" required>
+                  <option value="" disabled selected>Select time slot</option>
+                  <option value="Morning (9:00 AM - 12:00 PM)">Morning (9:00 AM - 12:00 PM)</option>
+                  <option value="Afternoon (12:00 PM - 3:00 PM)">Afternoon (12:00 PM - 3:00 PM)</option>
+                  <option value="Late Afternoon (3:00 PM - 6:00 PM)">Late Afternoon (3:00 PM - 6:00 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="service-needed">Service Needed *</label>
+                <select id="service-needed" class="form-control" required>
+                  <option value="" disabled selected>Select a treatment</option>
+                  <option value="First Dental Visit / Consultation">First Dental Visit / Consultation</option>
+                  <option value="Preventive Dental Cleaning">Preventive Dental Cleaning</option>
+                  <option value="Cavity Treatment / Fillings">Cavity Treatment / Fillings</option>
+                  <option value="Braces & Orthodontic Assessment">Braces & Orthodontic Assessment</option>
+                  <option value="Dental Sealants / Fluoride">Dental Sealants / Fluoride</option>
+                  <option value="Special Needs Dental Care">Special Needs Dental Care</option>
+                  <option value="Emergency Dental Pain">Emergency Dental Pain</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="doctor-preference">Doctor Preference</label>
+                <select id="doctor-preference" class="form-control">
+                  <option value="No Preference" selected>First Available Expert</option>
+                  <option value="Dr. Sunny Smile">Dr. Sunny Smile</option>
+                  <option value="Dr. Joy Giggles">Dr. Joy Giggles</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="appointment-notes">Special Concerns / Notes</label>
+              <textarea id="appointment-notes" class="form-control" placeholder="e.g. My child is extremely anxious about dentists, has sensory concerns, or history of toothache..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Book Friendly Appointment Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup (Supabase Connected) -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-grid">
+        <div class="newsletter-content">
+          <h2>Free Child Dental Care Tips!</h2>
+          <p>Subscribe to our monthly newsletter to receive professional pediatric guidelines, brushing tips, and clinic health camps.</p>
+        </div>
+        <div>
+          <form class="newsletter-form">
+            <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Enter email to subscribe to dental tips">
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe to newsletter">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map Location -->
+  <section class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.738435754522!2d-118.40258848478496!3d34.07361138060012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc047e19fc9b%3A0x6b44760ba26e6d1e!2sRodeo%20Dr%2C%20Beverly%20Hills%2C%20CA!5e0!3m2!1sen!2sus!4v1655000000000!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map showing Pediatric Dental World location"></iframe>
+  </section>
+
+  <!-- Beautiful Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1 -->
+        <div class="footer-col footer-about">
+          <h3>Pediatric Dental World</h3>
+          <p>We are a highly specialized pediatric dental clinic designed specifically to make children feel relaxed, secure, and completely happy during their dental visits.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Dental Services</a></li>
+            <li><a href="doctors.html">Our Doctors</a></li>
+            <li><a href="blog.html">Dental Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+          <ul>
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <p>123 Sunny Dental Lane,<br>Suite 100, Smile City, CA 90210</p>
+            </li>
+            <li>
+              <i class="fas fa-phone-volume"></i>
+              <p>+1 (555) 0199<br>Mon-Sat, 9AM - 6PM</p>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <p>hello@pediatricdentalworld.com<br>support@pediatricdentalworld.com</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="footer-col footer-hours">
+          <h3>Working Hours</h3>
+          <p><span class="day">Monday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Tuesday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Wednesday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Thursday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Friday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Saturday</span> <span>9:00 AM - 2:00 PM</span></p>
+          <p><span class="day">Sunday</span> <span style="color:var(--accent); font-weight:bold;">Closed</span></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pediatric Dental World. All rights reserved. Gentle Care, Happy Smiles.</p>
+        <p style="font-size:0.8rem; opacity:0.7;">Website by ebookcharm Web Services</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll back to top of page">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+</body>
+</html>

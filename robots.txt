@@ -1,0 +1,8 @@
+# robots.txt for Pediatric Dental World
+# Created in 2026 to ensure optimal local pediatric dentist indexing.
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://yourdomain.com/sitemap.xml

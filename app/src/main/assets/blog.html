@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Blog - Pediatric Dental World | Gentle Pediatric Dental Clinic</title>
+  <meta name="description" content="Explore expert parenting guides, brushing tips, toddler dental care guidelines, and safety alerts written by board-certified dentists.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Quicksand:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="Pediatric Dental World Home">
+        <div class="logo-icon" aria-hidden="true">🧸</div>
+        <div class="logo-text">Pediatric<span> Dental World</span></div>
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Our Doctors</a>
+        <a href="blog.html" class="active">Dental Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="appointment.html" class="btn btn-primary nav-cta">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <h1>Parenting & Dental Health Blog</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Dental Blog</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Listing Cards -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Healthy Habits</span>
+        <h2>Professional Advice for Parent Guides</h2>
+        <p>Simple, informative articles written by our specialized pediatric experts to make children's brushing fun and effective.</p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Post 1 -->
+        <article class="blog-card">
+          <div class="blog-img">
+            <i class="fas fa-brush" style="font-size: 4rem; color: rgba(79,182,232,0.25);"></i>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> June 28, 2026</span>
+              <span><i class="far fa-user"></i> Dr. Sunny Smile</span>
+            </div>
+            <h3><a href="#">5 Fun Games to Help Your Toddler Brush Regularly</a></h3>
+            <p>Struggling with toddler brushing standoffs? Discover 5 highly effective, play-based brushing games and musical routines that turn morning hygiene into an absolute blast.</p>
+            <a href="#" class="service-link" style="margin-top: auto;">Read Full Post <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="blog-card">
+          <div class="blog-img" style="background-color: rgba(255,140,105,0.1);">
+            <i class="fas fa-shield-virus" style="font-size: 4rem; color: rgba(255,140,105,0.25);"></i>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> May 14, 2026</span>
+              <span><i class="far fa-user"></i> Dr. Joy Giggles</span>
+            </div>
+            <h3><a href="#">Are Dental Sealants Safe for My Child?</a></h3>
+            <p>Demystifying preventative BPA-free dental sealants. Learn what sealants are, why they are applied to adult molars, and how they cut your child's cavity risk by over 80%.</p>
+            <a href="#" class="service-link" style="margin-top: auto;">Read Full Post <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="blog-card">
+          <div class="blog-img" style="background-color: rgba(126,217,168,0.1);">
+            <i class="fas fa-tooth" style="font-size: 4rem; color: rgba(126,217,168,0.25);"></i>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> April 02, 2026</span>
+              <span><i class="far fa-user"></i> Dr. Sunny Smile</span>
+            </div>
+            <h3><a href="#">What is a Baby Root Canal? (Pulpotomy Guide)</a></h3>
+            <p>Is a pulpotomy safe? We explain why repairing and keeping baby teeth strong with a gentle pulp therapy prevents adult orthodontic alignment complications later.</p>
+            <a href="#" class="service-link" style="margin-top: auto;">Read Full Post <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beautiful Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Pediatric Dental World</h3>
+          <p>We are a highly specialized pediatric dental clinic designed specifically to make children feel relaxed, secure, and completely happy during their dental visits.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Dental Services</a></li>
+            <li><a href="doctors.html">Our Doctors</a></li>
+            <li><a href="blog.html">Dental Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+          <ul>
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <p>123 Sunny Dental Lane,<br>Suite 100, Smile City, CA 90210</p>
+            </li>
+            <li>
+              <i class="fas fa-phone-volume"></i>
+              <p>+1 (555) 0199<br>Mon-Sat, 9AM - 6PM</p>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <p>hello@pediatricdentalworld.com<br>support@pediatricdentalworld.com</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-hours">
+          <h3>Working Hours</h3>
+          <p><span class="day">Monday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Tuesday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Wednesday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Thursday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Friday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Saturday</span> <span>9:00 AM - 2:00 PM</span></p>
+          <p><span class="day">Sunday</span> <span style="color:var(--accent); font-weight:bold;">Closed</span></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pediatric Dental World. All rights reserved. Gentle Care, Happy Smiles.</p>
+        <p style="font-size:0.8rem; opacity:0.7;">Website by ebookcharm Web Services</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll back to top of page">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+</body>
+</html>

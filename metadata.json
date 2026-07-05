@@ -1,0 +1,6 @@
+{
+  "name": "Pediatric Dental World",
+  "description": "A premium child-friendly dental clinic website built with modern HTML5/CSS3/Vanilla JS and serverless Supabase integrations, packaged as a hybrid Android WebView application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

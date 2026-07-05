@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Pediatric Dental World | Gentle Pediatric Dental Clinic</title>
+  <meta name="description" content="Explore our specialized kids dental services: preventative dental cleanings, painless cavity therapies, dental sealants, braces, emergency dentistry, and special needs dental care.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Quicksand:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="Pediatric Dental World Home">
+        <div class="logo-icon" aria-hidden="true">🧸</div>
+        <div class="logo-text">Pediatric<span> Dental World</span></div>
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="doctors.html">Our Doctors</a>
+        <a href="blog.html">Dental Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="appointment.html" class="btn btn-primary nav-cta">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <h1>Specialized Kids Services</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Services</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Services Catalog -->
+  <section class="section-padding">
+    <div class="container" style="display: flex; flex-direction: column; gap: 4.5rem;">
+      
+      <!-- Service Detail 1 -->
+      <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 3.5rem; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 4rem;">
+        <div class="hero-image-wrapper" style="transform: rotate(-1deg); max-width:100%;">
+          <div class="hero-image-placeholder" style="aspect-ratio: 4/3; background: linear-gradient(135deg, rgba(79, 182, 232, 0.15) 0%, rgba(126, 217, 168, 0.1) 100%);">
+            <i class="fas fa-shield-halved" style="font-size: 4.5rem; color: var(--primary);"></i>
+          </div>
+        </div>
+        <div>
+          <span class="tag" style="background-color:rgba(79, 182, 232, 0.12); color:var(--primary); font-weight:700; padding:0.4rem 1.2rem; border-radius:50px; display:inline-block; margin-bottom:1rem; font-size:0.85rem;">PREVENTIVE CARE</span>
+          <h2 style="font-size: 2rem; margin-bottom: 1rem; font-family: var(--font-header);">Gentle Cleaning & Oral Examinations</h2>
+          <p style="color:var(--text-muted); margin-bottom:1.5rem; line-height:1.7;">
+            A key cornerstone of our pediatric approach is protecting your child's natural teeth from cavities and decay. Our specialists use professional child-sized tools to gently clean and remove plaque, followed by a playful lesson in correct daily brushing.
+          </p>
+          <ul style="margin-bottom: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Gentle hand-scaling</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Plaque detection</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Playful dental education</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Infant dental care</li>
+          </ul>
+          <a href="appointment.html?service=preventive" class="btn btn-secondary">Request Booking</a>
+        </div>
+      </div>
+
+      <!-- Service Detail 2 -->
+      <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3.5rem; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 4rem;">
+        <div>
+          <span class="tag" style="background-color:rgba(255,140,105,0.12); color:var(--accent); font-weight:700; padding:0.4rem 1.2rem; border-radius:50px; display:inline-block; margin-bottom:1rem; font-size:0.85rem;">RESTORATIVE DENTISTRY</span>
+          <h2 style="font-size: 2rem; margin-bottom: 1rem; font-family: var(--font-header);">Painless Cavity Treatments & Fillings</h2>
+          <p style="color:var(--text-muted); margin-bottom:1.5rem; line-height:1.7;">
+            Should a cavity form, there's no reason to worry. We specialize in entirely painless restorative dentistry. By applying numbing jellies first, we can fill cavities using aesthetic, metal-free, white composite resin bonding that matches natural enamel perfectly.
+          </p>
+          <ul style="margin-bottom: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Strong composite resins</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Safe sedation options</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Kid-friendly root canals</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Gentle extractions</li>
+          </ul>
+          <a href="appointment.html?service=restorative" class="btn btn-primary">Request Booking</a>
+        </div>
+        <div class="hero-image-wrapper" style="transform: rotate(1.5deg); max-width:100%;">
+          <div class="hero-image-placeholder" style="aspect-ratio: 4/3; background: linear-gradient(135deg, rgba(255, 140, 105, 0.15) 0%, rgba(79, 182, 232, 0.1) 100%);">
+            <i class="fas fa-heart-pulse" style="font-size: 4.5rem; color: var(--accent);"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Detail 3 -->
+      <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 3.5rem; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 4rem;">
+        <div class="hero-image-wrapper" style="transform: rotate(-1.5deg); max-width:100%;">
+          <div class="hero-image-placeholder" style="aspect-ratio: 4/3; background: linear-gradient(135deg, rgba(126, 217, 168, 0.15) 0%, rgba(79, 182, 232, 0.1) 100%);">
+            <i class="fas fa-align-center" style="font-size: 4.5rem; color: var(--secondary);"></i>
+          </div>
+        </div>
+        <div>
+          <span class="tag" style="background-color:rgba(126,217,168,0.12); color:var(--secondary); font-weight:700; padding:0.4rem 1.2rem; border-radius:50px; display:inline-block; margin-bottom:1rem; font-size:0.85rem;">EARLY ORTHODONTICS</span>
+          <h2 style="font-size: 2rem; margin-bottom: 1rem; font-family: var(--font-header);">Interceptive Braces & Space Maintainers</h2>
+          <p style="color:var(--text-muted); margin-bottom:1.5rem; line-height:1.7;">
+            Early monitoring of a child's jaw development is critical. We assess teething patterns, guide dental spacing, and install simple space maintainers to ensure that newly erupting adult teeth find their perfect alignment.
+          </p>
+          <ul style="margin-bottom: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Jaw-growth evaluations</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Space maintainers</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Custom pediatric braces</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Habit guidance</li>
+          </ul>
+          <a href="appointment.html?service=ortho" class="btn btn-secondary">Request Booking</a>
+        </div>
+      </div>
+
+      <!-- Service Detail 4 -->
+      <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3.5rem; align-items: center; padding-bottom: 2rem;">
+        <div>
+          <span class="tag" style="background-color:rgba(79, 182, 232, 0.12); color:var(--primary); font-weight:700; padding:0.4rem 1.2rem; border-radius:50px; display:inline-block; margin-bottom:1rem; font-size:0.85rem;">SENSORY-SAFE</span>
+          <h2 style="font-size: 2rem; margin-bottom: 1rem; font-family: var(--font-header);">Compassionate Special Needs Dentistry</h2>
+          <p style="color:var(--text-muted); margin-bottom:1.5rem; line-height:1.7;">
+            Every child deserves a healthy smile. We specialize in caring for children with autism, ADHD, sensory integration challenges, and complex medical history. Our rooms have adjustable lightning, low-sound equipment, and we operate at your child's pace.
+          </p>
+          <ul style="margin-bottom: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Low sensory treatment</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Desensitization visits</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Compassionate staff</li>
+            <li><i class="fas fa-check" style="color:var(--secondary); margin-right:0.5rem;"></i> Dedicated rooms</li>
+          </ul>
+          <a href="appointment.html?service=special" class="btn btn-primary">Request Booking</a>
+        </div>
+        <div class="hero-image-wrapper" style="transform: rotate(1deg); max-width:100%;">
+          <div class="hero-image-placeholder" style="aspect-ratio: 4/3; background: linear-gradient(135deg, rgba(79, 182, 232, 0.15) 0%, rgba(255, 140, 105, 0.1) 100%);">
+            <i class="fas fa-wheelchair" style="font-size: 4.5rem; color: var(--primary);"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Safety Protocols section -->
+  <section class="section-padding" style="background-color: var(--bg-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Clinical Safety</span>
+        <h2>Our Hospital-Grade Safety Standards</h2>
+        <p>Keeping kids healthy is our absolute priority. Here is how we ensure maximum clinical sanitation.</p>
+      </div>
+
+      <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div style="background-color: var(--bg-white); border-radius: var(--border-radius-md); padding: 2rem; border: 1px solid var(--border-color);">
+          <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"><i class="fas fa-steam"></i></div>
+          <h4 style="font-family: var(--font-header); font-size: 1.25rem; margin-bottom: 0.5rem;">Class-B Autoclaves</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">We use premium vacuum autoclaves to sterilize clinical handpieces and instruments, killing 100% of bacterial and viral spores.</p>
+        </div>
+
+        <div style="background-color: var(--bg-white); border-radius: var(--border-radius-md); padding: 2rem; border: 1px solid var(--border-color);">
+          <div style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem;"><i class="fas fa-mask-face"></i></div>
+          <h4 style="font-family: var(--font-header); font-size: 1.25rem; margin-bottom: 0.5rem;">Single-Use Barriers</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Where reusable sterilization is not applicable, clinical surfaces are wrapped in medical-grade plastic barriers changed between patients.</p>
+        </div>
+
+        <div style="background-color: var(--bg-white); border-radius: var(--border-radius-md); padding: 2rem; border: 1px solid var(--border-color);">
+          <div style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;"><i class="fas fa-wind"></i></div>
+          <h4 style="font-family: var(--font-header); font-size: 1.25rem; margin-bottom: 0.5rem;">HEPA Clean-Air Filters</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Every treatment room is outfitted with continuous HEPA and UV air filtration, cycling and cleaning the indoor air every 8 minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beautiful Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Pediatric Dental World</h3>
+          <p>We are a highly specialized pediatric dental clinic designed specifically to make children feel relaxed, secure, and completely happy during their dental visits.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Dental Services</a></li>
+            <li><a href="doctors.html">Our Doctors</a></li>
+            <li><a href="blog.html">Dental Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+          <ul>
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <p>123 Sunny Dental Lane,<br>Suite 100, Smile City, CA 90210</p>
+            </li>
+            <li>
+              <i class="fas fa-phone-volume"></i>
+              <p>+1 (555) 0199<br>Mon-Sat, 9AM - 6PM</p>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <p>hello@pediatricdentalworld.com<br>support@pediatricdentalworld.com</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-hours">
+          <h3>Working Hours</h3>
+          <p><span class="day">Monday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Tuesday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Wednesday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Thursday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Friday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Saturday</span> <span>9:00 AM - 2:00 PM</span></p>
+          <p><span class="day">Sunday</span> <span style="color:var(--accent); font-weight:bold;">Closed</span></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pediatric Dental World. All rights reserved. Gentle Care, Happy Smiles.</p>
+        <p style="font-size:0.8rem; opacity:0.7;">Website by ebookcharm Web Services</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll back to top of page">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+</body>
+</html>

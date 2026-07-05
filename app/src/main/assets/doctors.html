@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Doctors - Pediatric Dental World | Gentle Pediatric Dental Clinic</title>
+  <meta name="description" content="Meet the board-certified pediatric dental specialists at Pediatric Dental World. Learn about Dr. Sunny Smile and Dr. Joy Giggles and their child-centered dental approach.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Quicksand:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="Pediatric Dental World Home">
+        <div class="logo-icon" aria-hidden="true">🧸</div>
+        <div class="logo-text">Pediatric<span> Dental World</span></div>
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html" class="active">Our Doctors</a>
+        <a href="blog.html">Dental Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="appointment.html" class="btn btn-primary nav-cta">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <h1>Our Pediatric Specialists</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Our Doctors</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Profiles -->
+  <section class="section-padding">
+    <div class="container" style="display: flex; flex-direction: column; gap: 5rem;">
+      
+      <!-- Doctor 1 Profile -->
+      <div style="display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 4rem; align-items: start;">
+        <div class="doctor-card" style="box-shadow: var(--box-shadow-medium); pointer-events: none;">
+          <div class="doctor-image-container" style="height: 340px;">
+            <div class="doctor-image-placeholder" style="background: linear-gradient(135deg, rgba(79, 182, 232, 0.25) 0%, rgba(126, 217, 168, 0.15) 100%);">
+              <i class="fas fa-user-doctor" style="font-size: 7rem; color: var(--primary);"></i>
+            </div>
+          </div>
+          <div class="doctor-info" style="background-color: var(--bg-light);">
+            <h3 style="font-size:1.5rem; margin-bottom: 0.25rem;">Dr. Sunny Smile, DDS</h3>
+            <div class="doctor-title" style="margin-bottom:0;">Chief Pediatric Dentist</div>
+          </div>
+        </div>
+        <div>
+          <span class="tag" style="background-color:rgba(79, 182, 232, 0.12); color:var(--primary); font-weight:700; padding:0.4rem 1.2rem; border-radius:50px; display:inline-block; margin-bottom:1rem; font-size:0.85rem;">BOARD CERTIFIED PEDIATRICIAN</span>
+          <h2 style="font-size: 2.2rem; margin-bottom: 1.25rem; font-family: var(--font-header);">Dr. Sunny Smile, DDS</h2>
+          <p style="color:var(--text-dark); font-size:1.1rem; line-height:1.7; margin-bottom:1.5rem; font-weight: 500;">
+            "My primary goal is to guide children to understand that dental care is safe, playful, and rewarding. A positive dental visit during childhood shapes their attitude toward healthcare for the rest of their lives."
+          </p>
+          <p style="color:var(--text-muted); margin-bottom:1.5rem; line-height:1.6;">
+            Dr. Sunny Smile completed his Doctorate of Dental Surgery (DDS) from the California Dental University, graduating with honors. He immediately pursued three additional years of residency specializing in Pediatric Clinical Care at Children's Hospital CA. 
+          </p>
+          <p style="color:var(--text-muted); margin-bottom:2rem; line-height:1.6;">
+            He is a standing executive member of the American Academy of Pediatric Dentistry (AAPD) and specializes in treating severe dental anxiety, child behavior management, and pediatric sedation protocols.
+          </p>
+          
+          <div style="background-color: var(--bg-light); padding: 1.5rem; border-radius: var(--border-radius-md); margin-bottom: 2.5rem; border-left: 5px solid var(--primary);">
+            <h4 style="font-family: var(--font-header); margin-bottom: 0.75rem; color: var(--text-dark);"><i class="fas fa-graduation-cap" style="color: var(--primary); margin-right: 0.5rem;"></i> Education & Training</h4>
+            <p style="font-size: 0.95rem; color: var(--text-dark); margin-bottom: 0.5rem;"><strong>DDS:</strong> California Dental University (Honors Graduate)</p>
+            <p style="font-size: 0.95rem; color: var(--text-dark); margin-bottom: 0.5rem;"><strong>Residency:</strong> Specialized Pediatric Dental Residency, Children's Hospital CA</p>
+            <p style="font-size: 0.95rem; color: var(--text-dark);"><strong>Board Certification:</strong> American Board of Pediatric Dentistry Diplomate</p>
+          </div>
+
+          <a href="appointment.html?doc=sunny" class="btn btn-secondary">Request Slot with Dr. Sunny</a>
+        </div>
+      </div>
+
+      <!-- Doctor 2 Profile -->
+      <div style="display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 4rem; align-items: start; border-top: 1px solid var(--border-color); padding-top: 5rem;">
+        <div class="doctor-card" style="box-shadow: var(--box-shadow-medium); pointer-events: none;">
+          <div class="doctor-image-container" style="height: 340px;">
+            <div class="doctor-image-placeholder" style="background: linear-gradient(135deg, rgba(255, 140, 105, 0.25) 0%, rgba(79, 182, 232, 0.15) 100%);">
+              <i class="fas fa-user-doctor" style="font-size: 7rem; color: var(--accent);"></i>
+            </div>
+          </div>
+          <div class="doctor-info" style="background-color: var(--bg-light);">
+            <h3 style="font-size:1.5rem; margin-bottom: 0.25rem;">Dr. Joy Giggles, DDS</h3>
+            <div class="doctor-title" style="margin-bottom:0;">Orthodontist & Kids Specialist</div>
+          </div>
+        </div>
+        <div>
+          <span class="tag" style="background-color:rgba(255,140,105,0.12); color:var(--accent); font-weight:700; padding:0.4rem 1.2rem; border-radius:50px; display:inline-block; margin-bottom:1rem; font-size:0.85rem;">PEDIATRIC ORTHODONTIST</span>
+          <h2 style="font-size: 2.2rem; margin-bottom: 1.25rem; font-family: var(--font-header);">Dr. Joy Giggles, DDS</h2>
+          <p style="color:var(--text-dark); font-size:1.1rem; line-height:1.7; margin-bottom:1.5rem; font-weight: 500;">
+            "Early jaw alignment monitoring and interceptive orthopedic dental plates prevent extreme orthodontic extraction needs as teenagers. A straight smile is a happy, confident smile."
+          </p>
+          <p style="color:var(--text-muted); margin-bottom:1.5rem; line-height:1.6;">
+            Dr. Joy Giggles holds a specialization in Interceptive Pediatric Orthodontics. She has dedicated her career to understanding jaw development dynamics in children ages 4 to 12.
+          </p>
+          <p style="color:var(--text-muted); margin-bottom:2rem; line-height:1.6;">
+            Known for her playful, gentle laughter and interactive magic tricks, she has a natural talent for making dental impressions and brace fittings an exciting, fully cooperative game for toddlers and children.
+          </p>
+          
+          <div style="background-color: var(--bg-light); padding: 1.5rem; border-radius: var(--border-radius-md); margin-bottom: 2.5rem; border-left: 5px solid var(--accent);">
+            <h4 style="font-family: var(--font-header); margin-bottom: 0.75rem; color: var(--text-dark);"><i class="fas fa-graduation-cap" style="color: var(--accent); margin-right: 0.5rem;"></i> Education & Training</h4>
+            <p style="font-size: 0.95rem; color: var(--text-dark); margin-bottom: 0.5rem;"><strong>DDS:</strong> National Orthodontic Institute (Summa Cum Laude)</p>
+            <p style="font-size: 0.95rem; color: var(--text-dark); margin-bottom: 0.5rem;"><strong>Master's Degree:</strong> Master of Science in Pediatric Craniofacial Growth</p>
+            <p style="font-size: 0.95rem; color: var(--text-dark);"><strong>Board Certification:</strong> Board Certified Orthodontic Diplomate</p>
+          </div>
+
+          <a href="appointment.html?doc=joy" class="btn btn-primary">Request Slot with Dr. Joy</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Beautiful Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Pediatric Dental World</h3>
+          <p>We are a highly specialized pediatric dental clinic designed specifically to make children feel relaxed, secure, and completely happy during their dental visits.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Dental Services</a></li>
+            <li><a href="doctors.html">Our Doctors</a></li>
+            <li><a href="blog.html">Dental Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+          <ul>
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <p>123 Sunny Dental Lane,<br>Suite 100, Smile City, CA 90210</p>
+            </li>
+            <li>
+              <i class="fas fa-phone-volume"></i>
+              <p>+1 (555) 0199<br>Mon-Sat, 9AM - 6PM</p>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <p>hello@pediatricdentalworld.com<br>support@pediatricdentalworld.com</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-hours">
+          <h3>Working Hours</h3>
+          <p><span class="day">Monday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Tuesday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Wednesday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Thursday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Friday</span> <span>9:00 AM - 6:00 PM</span></p>
+          <p><span class="day">Saturday</span> <span>9:00 AM - 2:00 PM</span></p>
+          <p><span class="day">Sunday</span> <span style="color:var(--accent); font-weight:bold;">Closed</span></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pediatric Dental World. All rights reserved. Gentle Care, Happy Smiles.</p>
+        <p style="font-size:0.8rem; opacity:0.7;">Website by ebookcharm Web Services</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll back to top of page">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+</body>
+</html>
